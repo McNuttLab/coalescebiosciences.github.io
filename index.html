@@ -74,13 +74,12 @@
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <div class="flex items-center gap-4 cursor-pointer" onclick="navigateTo('home')">
               <div class="w-14 h-14 rounded-xl overflow-hidden bg-black flex items-center justify-center border border-white/10 shadow-xl">
-                    <img src="logo.png"
+                    <img src="logo.jpg"
                      alt="Coalesce Logo"
                      class="w-full h-full object-cover blend-logo"
                      onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'font-bold\'>C</span>'">
               </div>
-
-                <span class="text-xl font-bold tracking-tight">Coalesce Biosciences</span>
+              <span class="text-xl font-bold tracking-tight">Coalesce Biosciences</span>
             </div>
 
             <!-- Desktop Nav -->
@@ -88,6 +87,7 @@
                 <button onclick="navigateTo('home')" class="text-sm font-medium hover:text-blue-500 transition-colors">Home</button>
                 <button onclick="navigateTo('about')" class="text-sm font-medium hover:text-blue-500 transition-colors">About</button>
                 <button onclick="navigateTo('services')" class="text-sm font-medium hover:text-blue-500 transition-colors">Services</button>
+                <button onclick="navigateTo('ccrp')" class="text-sm font-medium hover:text-blue-500 transition-colors">NIH-CCRP</button>
                 <button onclick="navigateTo('team')" class="text-sm font-medium hover:text-blue-500 transition-colors">Team</button>
                 <button onclick="scrollToContact()" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-all">Contact Us</button>
             </div>
@@ -104,6 +104,7 @@
         <button onclick="navigateTo('home')" class="text-2xl font-medium">Home</button>
         <button onclick="navigateTo('about')" class="text-2xl font-medium">About</button>
         <button onclick="navigateTo('services')" class="text-2xl font-medium">Services</button>
+        <button onclick="navigateTo('ccrp')" class="text-2xl font-medium">NIH-CCRP</button>
         <button onclick="navigateTo('team')" class="text-2xl font-medium">Team</button>
         <button onclick="toggleMenu()" class="absolute top-8 right-8"><i data-lucide="x" class="w-8 h-8"></i></button>
     </div>
@@ -140,7 +141,7 @@
                             <div class="absolute inset-0 border-[1px] border-blue-500/10 rounded-full spin-slow scale-125"></div>
                             <div class="absolute inset-0 flex items-center justify-center">
                                 <div class="w-[600px] h-[600px] flex items-center justify-center overflow-hidden group transition-transform duration-700 hover:scale-105 rounded-full border border-white/5 shadow-2xl">
-                                   <img src="logo.png"
+                                   <img src="logo.jpg"
                                         alt="Coalesce"
                                         class="w-full h-full object-cover opacity-100 shadow-2xl">
                                 </div>
@@ -207,7 +208,7 @@
                         </div>
                     </div>
 
-                    <!-- Contact Section Under Analytical Dynamics -->
+                    <!-- Contact Section -->
                     <div id="contact-section" class="max-w-4xl mx-auto py-20 bg-white/[0.02] border border-white/5 rounded-[3rem] p-8 md:p-16 relative overflow-hidden">
                         <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-600 to-transparent opacity-50"></div>
                         <div class="text-center mb-16">
@@ -238,17 +239,6 @@
                                 </div>
                             </div>
 
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div class="flex flex-col gap-2">
-                                    <label class="text-[10px] uppercase tracking-widest text-white/40 font-bold px-1">Company / Organization</label>
-                                    <input type="text" name="company" class="w-full px-5 py-4 rounded-xl text-sm" placeholder="Institution Name">
-                                </div>
-                                <div class="flex flex-col gap-2">
-                                    <label class="text-[10px] uppercase tracking-widest text-white/40 font-bold px-1">Job Title</label>
-                                    <input type="text" name="title" class="w-full px-5 py-4 rounded-xl text-sm" placeholder="e.g. Principal Scientist">
-                                </div>
-                            </div>
-
                             <div class="flex flex-col gap-2">
                                 <label class="text-[10px] uppercase tracking-widest text-white/40 font-bold px-1">Message</label>
                                 <textarea name="message" required rows="5" class="w-full px-5 py-4 rounded-xl text-sm resize-none" placeholder="Describe your project or inquiry details..."></textarea>
@@ -261,15 +251,6 @@
                                 </button>
                             </div>
                         </form>
-                        
-                        <div id="form-success" class="hidden text-center py-10 animate-fade-in">
-                            <div class="w-20 h-20 bg-green-500/10 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                                <i data-lucide="check" class="w-10 h-10"></i>
-                            </div>
-                            <h4 class="text-2xl font-bold mb-2">Message Sent</h4>
-                            <p class="text-white/40">Thank you for reaching out. Our team will review your inquiry and respond shortly.</p>
-                            <button onclick="resetForm()" class="mt-8 text-blue-500 text-sm font-bold hover:underline">Send another message</button>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -284,15 +265,9 @@
                         <span class="text-blue-500 italic">of biological and chemical defense.</span>
                     </h2>
                     <div class="grid lg:grid-cols-2 gap-12 text-white/60 text-lg md:text-xl font-light leading-relaxed mb-12">
-                        <p>Founded by Dr. Patrick McNutt, Coalesce Biosciences operates at the intersection of academic rigor and translational impact, bridging the gap between basic toxicological research and the critical need for medical countermeasures.</p>
+                        <p>Coalesce Biosciences operates at the intersection of academic rigor and translational impact, bridging the gap between basic toxicological research and the critical need for medical countermeasures.</p>
                         <p>
                             Coalesce Biosciences is strategically headquartered within <span class="text-white font-medium">Winston-Salem's Innovation Quarter</span>, one of the fastest-growing urban innovation districts in the United States. This location places us at the heart of a vibrant biotech ecosystem, fostering direct collaboration with academic leaders, clinical investigators, and industry innovators. 
-                        </p>
-                    </div>
-
-                    <div class="grid lg:grid-cols-2 gap-12 text-white/60 text-lg md:text-xl font-light leading-relaxed mb-12">
-                        <p>
-                            By operating within this expanding hub, we leverage a deep talent pool and cutting-edge resources that accelerate our mission. Our position here allows for seamless transitions from basic research to translational applications, ensuring that our medical countermeasures are developed within a community dedicated to the future of healthcare and life sciences. Our infrastructure is purpose-built for agents that require the highest levels of containment, precision, and regulatory compliance.
                         </p>
                     </div>
 
@@ -308,27 +283,21 @@
                     </div>
                     
                     <div class="p-10 md:p-14 border border-white/10 rounded-[3rem] relative overflow-hidden mb-24 min-h-[400px] flex items-center">
-                        <!-- Background Image Layer -->
                         <div class="absolute inset-0 z-0">
-                            <img src="WFIRM.jpg" 
-                                 alt="Wake Forest Institute for Regenerative Medicine" 
-                                 class="w-full h-full object-cover opacity-20"
-                                 onerror="this.style.display='none'">
+                            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop" 
+                                 alt="WFIRM" 
+                                 class="w-full h-full object-cover opacity-20">
                             <div class="absolute inset-0 bg-gradient-to-r from-gray-950/90 via-gray-950/40 to-transparent"></div>
                         </div>
-
-                        <div class="absolute top-0 right-0 p-8 opacity-10 z-0">
-                            <i data-lucide="graduation-cap" class="w-32 h-32 text-blue-500"></i>
-                        </div>
-                        
                         <div class="max-w-4xl relative z-10">
                             <h3 class="text-2xl md:text-3xl font-medium text-white mb-6 tracking-tight">Institutional Synergy</h3>
-                            <p class="text-white/80 text-lg md:text-xl font-light leading-relaxed mb-6">
-                                Embedded within the <span class="text-white font-medium">Wake Forest School of Medicine</span> and the <span class="text-white font-medium">Wake Forest Institute for Regenerative Medicine (WFIRM)</span>, we operate at the intersection of academic rigor and translational impact.
+                            <p class="text-white/80 text-lg md:text-xl font-light leading-relaxed mb-8">
+                                Embedded within the <span class="text-white font-medium">Wake Forest School of Medicine</span> and the <span class="text-white font-medium">Wake Forest Institute for Regenerative Medicine (WFIRM)</span>, we provide direct access to world-class facilities and pioneering research networks.
                             </p>
-                            <p class="text-white/80 text-lg md:text-xl font-light leading-relaxed">
-                                This affiliation provides direct access to <span class="text-white font-semibold">world-class facilities</span>, <span class="text-white font-semibold">multi-disciplinary expertise</span>, and <span class="text-white font-semibold">pioneering research networks</span>. Together, we leverage access to leading scientists, clinicians, and innovators to accelerate the journey from discovery to application.
-                            </p>
+                            <a href="https://school.wakehealth.edu/research/institutes-and-centers/wake-forest-institute-for-regenerative-medicine" target="_blank" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-bold tracking-tight transition-all group shadow-lg">
+                                Visit WFIRM 
+                                <i data-lucide="external-link" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -338,111 +307,200 @@
                             <h3 class="text-3xl md:text-5xl font-medium tracking-tight whitespace-nowrap text-white">Laboratory Infrastructure</h3>
                             <div class="h-px bg-white/10 flex-1"></div>
                         </div>
+
+                        <!-- Toxic Chemistry Laboratory Stock Photo -->
+                        <div class="mb-16 rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl h-[300px] md:h-[450px] relative">
+                            <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?q=80&w=2070&auto=format&fit=crop" 
+                                 alt="Toxic Chemical Laboratory" 
+                                 class="w-full h-full object-cover opacity-70">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-950/60 to-transparent"></div>
+                            <div class="absolute bottom-0 left-0 p-8">
+                                <p class="text-xs uppercase tracking-[0.3em] font-bold text-blue-400">Chemical Countermeasures & Synthesis Laboratory</p>
+                            </div>
+                        </div>
                         
                         <div class="grid lg:grid-cols-5 gap-12 items-start">
-                            <!-- Facility Stats & Reg Details -->
                             <div class="lg:col-span-2 space-y-8">
-                                <div class="p-8 bg-blue-600/5 border border-blue-500/20 rounded-[2.5rem] relative overflow-hidden">
-                                    <div class="absolute top-0 right-0 p-6 opacity-5">
-                                        <i data-lucide="shield-check" class="w-24 h-24"></i>
-                                    </div>
+                                <div class="p-8 bg-blue-600/5 border border-blue-500/20 rounded-[2.5rem]">
                                     <h4 class="text-xl font-bold mb-6 text-white">Facility Specifications</h4>
-                                    
                                     <div class="space-y-6">
                                         <div>
                                             <div class="text-blue-500 text-[10px] uppercase tracking-widest font-bold mb-1">Select Agent Space</div>
                                             <p class="text-white text-lg font-medium">10,200 sq ft <span class="text-white/40 font-light text-sm">of neat agent research space</span></p>
                                         </div>
                                         <div>
-                                            <div class="text-blue-500 text-[10px] uppercase tracking-widest font-bold mb-1">Academic Partnership</div>
-                                            <p class="text-white text-lg font-medium">3,000 sq ft <span class="text-white/40 font-light text-sm">of academic research space with access to core resources</span></p>
-                                        </div>
-                                        <div>
                                             <div class="text-blue-500 text-[10px] uppercase tracking-widest font-bold mb-1">Regulated Handling</div>
-                                            <p class="text-white/60 font-light text-sm leading-relaxed">
-                                                Regulatory clearance for <strong class="text-white">Schedule I and II chemical agents</strong> and high-potency biological toxins.
-                                            </p>
-                                        </div>
-                                        <div>
-                                            <div class="text-blue-500 text-[10px] uppercase tracking-widest font-bold mb-1">Specialized Lab Assets</div>
-                                            <p class="text-white/60 font-light text-sm leading-relaxed">
-                                                In-house <strong class="text-white">chemical synthesis and storage</strong> facilities designed for high-consequence agent management.
-                                            </p>
+                                            <p class="text-white/60 font-light text-sm">Regulatory clearance for <strong class="text-white">Schedule I and II chemical agents</strong> and high-potency toxins.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <!-- Modeling & Vivarium Details -->
                             <div class="lg:col-span-3 space-y-10 pt-4">
                                 <h4 class="text-2xl font-medium tracking-tight text-white flex items-center gap-3">
                                     <i data-lucide="bar-chart-3" class="text-blue-500 w-6 h-6"></i> Technical Capabilities
                                 </h4>
-                                
-                                <div class="grid md:grid-cols-1 gap-8">
-                                    <!-- Animal Models & Vivarium -->
-                                    <div class="p-8 bg-white/5 border border-white/10 rounded-3xl flex flex-col md:flex-row gap-8">
-                                        <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500 shrink-0">
-                                            <i data-lucide="activity"></i>
+                                <div class="grid md:grid-cols-2 gap-8">
+                                    <div class="p-8 bg-white/5 border border-white/10 rounded-3xl space-y-4">
+                                        <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center text-blue-500">
+                                            <i data-lucide="microscope"></i>
                                         </div>
-                                        <div class="space-y-4">
-                                            <h5 class="text-blue-500 text-[10px] uppercase tracking-widest font-bold">Vivarium & Translational Models</h5>
-                                            <p class="text-white/70 text-lg font-medium leading-tight">Specialized vivarium capable of housing rodents and USDA species.</p>
-                                            <p class="text-white/40 text-sm leading-relaxed font-light">
-                                                Comprehensive in vivo expertise spanning <strong class="text-white/60">mice, rats, guinea pigs, rabbits, swine, and NHP</strong>. Our facility supports mapping damage trajectories and observing systemic physiological responses at the highest containment levels.
-                                            </p>
-                                        </div>
+                                        <h5 class="text-blue-500 text-[10px] uppercase tracking-widest font-bold">Next-Gen Organoids</h5>
+                                        <p class="text-white/40 text-sm font-light">High-fidelity, human-derived organoids providing mechanistic insights into tissue-specific injury.</p>
                                     </div>
-
-                                    <div class="grid md:grid-cols-2 gap-8">
-                                        <div class="p-8 bg-white/5 border border-white/10 rounded-3xl space-y-4">
-                                            <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center text-blue-500">
-                                                <i data-lucide="microscope" class="w-5 h-5"></i>
-                                            </div>
-                                            <h5 class="text-blue-500 text-[10px] uppercase tracking-widest font-bold">Next-Gen Organoids</h5>
-                                            <p class="text-white/40 text-sm leading-relaxed font-light">High-fidelity, human-derived organoids providing mechanistic insights into tissue-specific injury and recovery.</p>
+                                    <div class="p-8 bg-white/5 border border-white/10 rounded-3xl space-y-4">
+                                        <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center text-blue-500">
+                                            <i data-lucide="wind"></i>
                                         </div>
-                                        <div class="p-8 bg-white/5 border border-white/10 rounded-3xl space-y-4">
-                                            <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center text-blue-500">
-                                                <i data-lucide="wind" class="w-5 h-5"></i>
-                                            </div>
-                                            <h5 class="text-blue-500 text-[10px] uppercase tracking-widest font-bold">Exposure Protocols</h5>
-                                            <p class="text-white/40 text-sm leading-relaxed font-light">Precision-engineered delivery systems mimicking real-world inhalation, dermal, and systemic exposure scenarios.</p>
-                                        </div>
+                                        <h5 class="text-blue-500 text-[10px] uppercase tracking-widest font-bold">Exposure Protocols</h5>
+                                        <p class="text-white/40 text-sm font-light">Precision-engineered delivery systems mimicking real-world inhalation and dermal scenarios.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                    <!-- Collaboration Frameworks -->
-                    <div class="mt-24 mb-12">
-                        <div class="flex items-center gap-4 mb-10">
-                            <div class="h-px bg-white/10 flex-1"></div>
-                            <h3 class="text-3xl md:text-4xl font-medium tracking-tight whitespace-nowrap px-4 text-white">Collaboration Frameworks</h3>
-                            <div class="h-px bg-white/10 flex-1"></div>
+        <!-- NIH-CCRP Page -->
+        <div id="page-ccrp" class="page-content hidden animate-slide-up">
+            <div class="pt-40 px-8 md:px-16 max-w-7xl mx-auto pb-32 text-left">
+                <div class="mb-12 max-w-4xl">
+                    <h2 class="text-5xl md:text-7xl font-medium tracking-tight mb-8">Academic <span class="text-blue-500">Strategic Partnerships</span></h2>
+                    
+                    <div class="p-8 md:p-12 bg-white/[0.02] border border-white/10 border rounded-[3rem] mb-16 space-y-8">
+                        <!-- New Mission Paragraph -->
+                        <p class="text-white/60 text-lg md:text-xl font-light leading-relaxed">
+                            The <strong class="text-white">NIH Chemical Countermeasures Research Program (CCRP)</strong> is a component of the broader civilian biodefense research effort. Its mission is to integrate cutting-edge research with the latest technological advances in science and medicine to enhance national medical and public health preparedness for, response to, and recovery from disasters and public health chemical emergencies.
+                        </p>
+
+                        <p class="text-white/80 text-xl md:text-2xl font-light leading-relaxed border-t border-white/5 pt-8">
+                            <strong class="text-white">Coalesce Biosciences</strong> is a specialized contract research organization embedded within a leading academic medical center, delivering rigorous toxicology and translational research for commercial, government, and academic partners.
+                        </p>
+                        
+                        <div class="flex flex-col lg:flex-row items-center gap-12 border-t border-white/5 pt-8">
+                            <div class="flex-1">
+                                <p class="text-white/60 text-lg md:text-xl font-light leading-relaxed">
+                                    We provide end-to-end support for studies involving <strong class="text-white">Schedule I & II chemical agents</strong> and biological toxins, combining academic scientific depth with CRO execution. We provide an NIH-subsidized core to conduct this work called the <strong class="text-white font-medium italic">Wake Forest University Vesicant Exposure Resource and Coordination Core</strong>.
+                                </p>
+                            </div>
+                            
+                            <!-- Institutional Partners Logo Spot -->
+                            <div class="flex flex-col gap-4 w-full md:w-auto lg:w-64">
+                                <!-- Wake Forest School of Medicine Logo Spot -->
+                                <div class="w-full h-24 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center p-4 group transition-all hover:bg-white/10 hover:border-blue-500/30">
+                                     <div class="text-white/20 group-hover:text-blue-500/40 transition-colors mb-1">
+                                         <i data-lucide="landmark" class="w-6 h-6"></i>
+                                     </div>
+                                     <span class="text-[9px] uppercase tracking-widest font-bold text-white/20 text-center leading-tight">Wake Forest School of Medicine</span>
+                                </div>
+                                <!-- NIAID Logo Spot -->
+                                <div class="w-full h-24 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center p-4 group transition-all hover:bg-white/10 hover:border-blue-500/30">
+                                     <div class="text-white/20 group-hover:text-blue-500/40 transition-colors mb-1">
+                                         <i data-lucide="microscope" class="w-6 h-6"></i>
+                                     </div>
+                                     <span class="text-[9px] uppercase tracking-widest font-bold text-white/20 text-center leading-tight">NIAID</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            <div class="p-8 bg-white/[0.02] border border-white/5 rounded-3xl hover:border-blue-500/20 transition-all">
-                                <div class="text-blue-500 mb-6"><i data-lucide="graduation-cap"></i></div>
-                                <h4 class="text-lg font-bold mb-3">Academic Institutions</h4>
-                                <p class="text-sm text-white/40 leading-relaxed font-light">Collaborative research programs involving leading universities and medical centers.</p>
+
+                        <div class="pt-4 flex flex-wrap gap-4">
+                            <a href="https://www.niaid.nih.gov/research/chemical-countermeasures-program" 
+                               target="_blank" 
+                               class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-2xl font-bold tracking-tight transition-all group">
+                                Official NIH CCRP Program
+                                <i data-lucide="external-link" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+                            </a>
+                            <a href="#" 
+                               class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-4 rounded-2xl font-bold tracking-tight transition-all group">
+                                2025 Program Portfolio
+                                <i data-lucide="file-text" class="w-4 h-4 group-hover:scale-110 transition-transform"></i>
+                            </a>
+                            <button onclick="scrollToContact()" class="inline-flex items-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 text-white px-8 py-4 rounded-2xl font-bold tracking-tight transition-all">
+                                Propose a Collaboration
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Bridge Section -->
+                <div class="mb-32">
+                    <div class="flex items-center gap-4 mb-12">
+                        <h3 class="text-3xl font-medium text-white tracking-tight whitespace-nowrap">Supporting the NIH Research Mission</h3>
+                        <div class="h-px bg-white/10 flex-1"></div>
+                    </div>
+                    
+                    <div class="grid lg:grid-cols-3 gap-8">
+                        <div class="p-8 bg-white/[0.03] border border-white/10 rounded-[2.5rem] space-y-6">
+                            <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500">
+                                <i data-lucide="microscope"></i>
                             </div>
-                            <div class="p-8 bg-white/[0.02] border border-white/5 rounded-3xl hover:border-blue-500/20 transition-all">
-                                <div class="text-blue-500 mb-6"><i data-lucide="file-check"></i></div>
-                                <h4 class="text-lg font-bold mb-3">Fee-for-Service Agreements</h4>
-                                <p class="text-sm text-white/40 leading-relaxed font-light">Direct CRO services for standardized or customized preclinical toxicological studies.</p>
+                            <h4 class="text-xl font-bold text-white tracking-tight">Investigator Support</h4>
+                            <p class="text-white/40 text-sm leading-relaxed font-light">
+                                Providing the high-containment infrastructure and rigorous methodological standards required for specialized NIH research project grants.
+                            </p>
+                        </div>
+                        
+                        <div class="p-8 bg-white/[0.03] border border-white/10 rounded-[2.5rem] space-y-6">
+                            <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500">
+                                <i data-lucide="zap"></i>
                             </div>
-                            <div class="p-8 bg-white/[0.02] border border-white/5 rounded-3xl hover:border-blue-500/20 transition-all">
-                                <div class="text-blue-500 mb-6"><i data-lucide="landmark"></i></div>
-                                <h4 class="text-lg font-bold mb-3">Government Research Contracts</h4>
-                                <p class="text-sm text-white/40 leading-relaxed font-light">Performance of R&D supporting federal health security and defense agencies.</p>
+                            <h4 class="text-xl font-bold text-white tracking-tight">Rapid Innovation</h4>
+                            <p class="text-white/40 text-sm leading-relaxed font-light">
+                                Facilitating exploratory science through rapid model validation and specialized toxicological screening platforms for developmental projects.
+                            </p>
+                        </div>
+
+                        <div class="p-8 bg-white/[0.03] border border-white/10 rounded-[2.5rem] space-y-6">
+                            <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500">
+                                <i data-lucide="shield-check"></i>
                             </div>
-                            <div class="p-8 bg-white/[0.02] border border-white/5 rounded-3xl hover:border-blue-500/20 transition-all">
-                                <div class="text-blue-500 mb-6"><i data-lucide="briefcase"></i></div>
-                                <h4 class="text-lg font-bold mb-3">Industry Partnerships</h4>
-                                <p class="text-sm text-white/40 leading-relaxed font-light">Strategic alliances with biotech and pharmaceutical leaders for MCM pipeline development.</p>
+                            <h4 class="text-xl font-bold text-white tracking-tight">Select Agent Security</h4>
+                            <p class="text-white/40 text-sm leading-relaxed font-light">
+                                Handling the regulatory and safety requirements for neat agents, allowing academic investigators to focus purely on the scientific innovation of their proposals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Collaborative Funding Opportunities Section -->
+                <div class="grid lg:grid-cols-2 gap-12 mb-32 items-center">
+                    <div class="space-y-8">
+                        <h3 class="text-3xl md:text-4xl font-medium text-white tracking-tight">Collaborative Funding & Mission Support</h3>
+                        <p class="text-white/60 text-lg leading-relaxed font-light">
+                            Coalesce Biosciences actively partners with academic investigators from major research universities to strengthen federal biodefense applications, specifically:
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-center gap-4 p-4 bg-white/5 rounded-2xl border border-white/5">
+                                <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                                <span class="text-white/80 font-medium text-sm">NIH Research Grants</span>
                             </div>
+                            <div class="flex items-center gap-4 p-4 bg-white/5 rounded-2xl border border-white/5">
+                                <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                                <span class="text-white/80 font-medium text-sm">Exploratory Grant Awards</span>
+                            </div>
+                            <div class="flex items-center gap-4 p-4 bg-white/5 rounded-2xl border border-white/5">
+                                <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                                <span class="text-white/80 font-medium text-sm">CounterACT U01 / U54</span>
+                            </div>
+                            <div class="flex items-center gap-4 p-4 bg-white/5 rounded-2xl border border-white/5">
+                                <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                                <span class="text-white/80 font-medium text-sm">SBIR/STTR Translational Grants</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-10 bg-blue-600 rounded-[3rem] space-y-6 relative overflow-hidden shadow-2xl">
+                        <div class="absolute top-0 right-0 p-8 opacity-10">
+                            <i data-lucide="handshake" class="w-32 h-32 text-white"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white">Grant Success Through Partnership</h4>
+                        <p class="text-white/90 text-lg font-light leading-relaxed">
+                            "By incorporating Coalesce as your specialized research partner, your NIH grant application gains immediate access to the regulatory clearance, specialized modeling capacity, and high-containment facility needed to win federal awards."
+                        </p>
+                        <div class="pt-4">
+                            <button onclick="scrollToContact()" class="bg-white text-blue-600 px-8 py-3 rounded-xl font-bold hover:bg-blue-50 transition-all">
+                                Discuss Your Application
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -452,48 +510,8 @@
         <!-- Services Page -->
         <div id="page-services" class="page-content hidden animate-slide-up">
             <div class="pt-40 px-8 md:px-16 max-w-7xl mx-auto pb-32 text-left">
-                <div class="mb-12 text-center max-w-4xl mx-auto">
-                    <h2 class="text-5xl md:text-7xl font-medium tracking-tight mb-8">Preclinical <span class="text-blue-500">Research</span></h2>
-                    
-                    <!-- Information Header -->
-                    <div class="mt-12 mb-16 p-8 md:p-12 bg-white/[0.02] border border-white/10 rounded-[3rem] text-left">
-                        <h3 class="text-2xl md:text-3xl font-medium text-white mb-6 tracking-tight flex items-center gap-3">
-                            <i data-lucide="bar-chart-3" class="text-blue-500"></i> Advanced Modeling for Deep Insights
-                        </h3>
-                        <p class="text-white/60 text-lg font-light leading-relaxed mb-10">
-                            Our multidisciplinary team utilizes a sophisticated suite of models to map the trajectory of toxicological damage:
-                        </p>
-                        
-                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                            <div class="space-y-3">
-                                <h4 class="text-blue-500 text-sm font-bold uppercase tracking-widest">Translational Animal Models</h4>
-                                <p class="text-white/50 text-sm leading-relaxed font-light">Comprehensive in vivo studies to observe systemic physiological responses.</p>
-                            </div>
-                            <div class="space-y-3">
-                                <h4 class="text-blue-500 text-sm font-bold uppercase tracking-widest">Next-Gen Organoid Platforms</h4>
-                                <p class="text-white/50 text-sm leading-relaxed font-light">High-fidelity, human-derived organoids that provide mechanistic insights into tissue-specific injury and recovery.</p>
-                            </div>
-                            <div class="space-y-3">
-                                <h4 class="text-blue-500 text-sm font-bold uppercase tracking-widest">Custom Exposure Protocols</h4>
-                                <p class="text-white/50 text-sm leading-relaxed font-light">Precision-engineered delivery systems designed to mimic real-world inhalation, dermal, or systemic exposure scenarios.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-32" id="services-grid">
-                    <!-- Dynamic Services Injection -->
-                </div>
-
-                <div class="bg-blue-600 rounded-[3rem] p-12 flex flex-col lg:flex-row items-center justify-between gap-8 relative overflow-hidden">
-                    <div class="max-w-xl">
-                        <h3 class="text-4xl font-medium mb-4 text-white">Partner with our labs.</h3>
-                        <p class="text-white/80 text-lg font-light">Initiate high-fidelity safety and efficacy studies for your therapeutic candidates. Our 10,200 sq ft facility is ready for neat select agent research.</p>
-                    </div>
-                    <button onclick="scrollToContact()" class="bg-white text-blue-600 px-10 py-5 rounded-2xl font-bold tracking-tight hover:bg-blue-50 transition-colors flex items-center gap-3">
-                        Inquire Now <i data-lucide="mail"></i>
-                    </button>
-                </div>
+                <h2 class="text-5xl md:text-7xl font-medium tracking-tight mb-8">Preclinical <span class="text-blue-500">Research</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-32" id="services-grid"></div>
             </div>
         </div>
 
@@ -501,17 +519,28 @@
         <div id="page-team" class="page-content hidden animate-slide-up">
             <div class="pt-40 px-8 md:px-16 max-w-7xl mx-auto text-left pb-32">
                 <div class="mb-20">
-                    <div class="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
-                        <i data-lucide="users" class="w-4 h-4 text-blue-400"></i>
-                        <span class="text-[10px] uppercase tracking-widest font-bold text-blue-400">Leadership & Science</span>
-                    </div>
                     <h2 class="text-5xl md:text-7xl font-medium tracking-tight mb-8">
-                        The minds behind the <br />
-                        <span class="text-blue-500 italic">precision.</span>
+                        Unmatched expertise for <br />
+                        <span class="text-blue-500 italic">toxic agent research.</span>
                     </h2>
                 </div>
-                <div id="team-list" class="grid gap-8">
-                    <!-- Team members injected here -->
+                
+                <!-- Core Team Section -->
+                <div class="mb-16">
+                    <div class="flex items-center gap-4 mb-12">
+                        <h3 class="text-2xl font-bold text-white uppercase tracking-widest">Leadership & Science</h3>
+                        <div class="h-px bg-white/10 flex-1"></div>
+                    </div>
+                    <div id="team-list" class="grid gap-8"></div>
+                </div>
+
+                <!-- Strategic Advisors Section -->
+                <div class="mt-24">
+                    <div class="flex items-center gap-4 mb-12">
+                        <h3 class="text-2xl font-bold text-white uppercase tracking-widest">Strategic Advisors</h3>
+                        <div class="h-px bg-white/10 flex-1"></div>
+                    </div>
+                    <div id="advisor-list" class="grid gap-8"></div>
                 </div>
             </div>
         </div>
@@ -525,14 +554,13 @@
                     <div class="w-8 h-8 rounded bg-blue-600 flex items-center justify-center font-bold">C</div>
                     <span class="text-lg font-bold tracking-tight">Coalesce Biosciences</span>
                 </div>
-                <p class="text-white/40 text-sm leading-relaxed">Advancing preclinical defense through precision toxicology and specialized model development.</p>
+                <p class="text-white/40 text-sm leading-relaxed">Advancing preclinical defense through precision toxicology.</p>
             </div>
             <div class="flex gap-20">
                 <div>
                     <h5 class="font-bold text-sm mb-6 text-white uppercase tracking-widest">Connect</h5>
                     <div class="flex flex-col gap-4 text-white/50 text-sm">
-                        <a href="#" class="hover:text-blue-500 flex items-center gap-2 transition-colors"><i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn</a>
-                        <a href="mailto:contact@coalesce.bio" class="hover:text-blue-500 flex items-center gap-2 transition-colors"><i data-lucide="mail" class="w-4 h-4"></i> contact@coalesce.bio</a>
+                        <a href="mailto:WFCBCORE@Advocatehealth.org" class="hover:text-blue-500 flex items-center gap-2 transition-colors"><i data-lucide="mail" class="w-4 h-4"></i> WFCBCORE@Advocatehealth.org</a>
                     </div>
                 </div>
                 <div>
@@ -541,67 +569,69 @@
                 </div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto pt-20 flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-white/20">
-            <span>© 2024 Coalesce Biosciences. All rights reserved.</span>
-            <div class="flex gap-8">
-                <a href="#" class="hover:text-white">Privacy</a>
-                <a href="#" class="hover:text-white">Terms</a>
-            </div>
-        </div>
     </footer>
 
     <script>
-const teamData = [
+        const teamData = [
             {
                 name: "Dr. Patrick McNutt",
                 role: "Founder and Principal Investigator",
                 bio: "Patrick earned undergraduate degrees in Biology and Chemistry before completing a PhD in Cellular and Molecular Biology at Princeton University. After graduate school, he served as an Army officer for eight years, including a tour in Iraq. In 2010, he accepted a DoD Principal Investigator position where he built a large research program developing countermeasures for highly dangerous biological and chemical toxins affecting the central and peripheral nervous systems as well as the cornea of the eye. In 2020, he returned to Wake Forest as an Associate Professor at the Institute for Regenerative Medicine (WFIRM), where he (1) conducts fundamental studies to understand toxic mechanisms of diverse poisons at scales ranging from individual receptors to multi-organ physiological responses; (2) develops comprehensive therapies that mitigate toxicity and promote regeneration; and (3) exploits WFIRM's unique capabilities to develop organoid models of complex diseases and toxic injuries.",
-                image: "McNuttheadshot.jpg",
+                image: "McNuttheadshot.jpeg",
                 links: [{ label: "Google Scholar", url: "https://scholar.google.com/citations?user=ceRIHocAAAAJ&hl", icon: "graduation-cap" }]
             },
-    {
-        name: "Dr. Ratnakar Tripathi",
-        role: "Senior Staff Scientist",
-        bio: "Dr. Ratnakar Tripathi is a Staff Scientist at the Wake Forest Institute for Regenerative Medicine. He earned his Ph.D. in Vision Science from Banaras Hindu University, Varanasi, India, and began his career at the LV Prasad Eye Institute, Hyderabad, India. He later pursued postdoctoral training and became an Assistant Research Professor at the University of Missouri, Columbia, USA. Dr. Tripathi currently serves as a Scientific Program Manager under the NIH U2C program, where he plays a pivotal role in advancing translational research on chemical threat agents. He is instrumental in the development and standardization of in vitro, ex vivo, and in vivo exposure procedures, ensuring methodological rigor and reproducibility across CCRP-funded studies. Dr. Tripathi oversees sample collection protocols, data analysis pipelines, and quality assurance measures, while also providing technical assistance and specialized training to CCRP-funded investigators and educational fellows. His leadership fosters consistency in experimental approaches and strengthens collaborative research efforts focused on vesicants identified in CCRP-supported projects.",
-        icon: "flask-conical",
-        image: "tripathiheadshot.jpg"
-    },
-    {
-        name: "Dr. Sarfaraz Ahmad",
-        role: "Senior Staff Scientist",
-        bio: "Dr. Sarfaraz Ahmad holds a PhD in Biochemistry from the Indian Institute of Toxicology Research, Lucknow, and completed his post-doctoral training at the US Environmental Protection Agency (EPA) and Atrium Health - Wake Forest University School of Medicine. He has extensive research experience in both experimental animal models and human subjects, with a strong foundation in toxicology, biochemistry, cell biology, molecular biology, physiology, and pharmacology. His expertise spans a broad range of laboratory techniques, including cellular and molecular biology, biochemical analysis, and analytical biochemistry such as HPLC, LC-MS, affinity column chromatography, PCR, multi-well plate-based immunoassays, ELISA, radioimmunoassay (RIA), cell/tissue culture, as well as immunological and histopathological techniques. Additionally, his leadership and management skills have been crucial in successfully managing NIH and foundation-funded research projects, mentoring junior researchers, and developing compelling grant applications. He has already effectively contributed to the various research projects currently underway at the Wake Forest Institute for Regenerative Medicine and Coalesce Biosciences. Outside of work, his hobbies include cooking, watching comedy movies, and playing badminton, ping-pong and cricket with family and friends.",
-        icon: "microscope",
-        image: "Ahmadheadshot.jpg"
-    },
-    {
-        name: "Katie Brigham, MS",
-        role: "Program Manager",
-        bio: "Katie Brigham serves as a Program Manager at Coalesce Biosciences as well as for other CCRP-funded projects, providing essential operational leadership and administrative oversight for complex research initiatives. Working closely with scientific leadership, she ensures project milestones are met through rigorous resource management, regulatory compliance coordination, and streamlined communication across multidisciplinary teams. She currently holds a Master's Degree in Translational Biotechnology from the Wake Forest Institute for Regenerative Medicine (WFIRM) as well as undergraduate degrees in Biology and Chemistry from East Carolina University. She has over a decade of experience as a lab technician in clinical and academic institutions with a specialization in molecular oncology and pathology. Her scientific skills include cell culture, organoids, molecular assays, immunohistochemistry, and high-resolution imaging. Outside of work, Katie enjoys spending time with her husband and two children, reading, hiking, and traveling.",
-        icon: "clipboard-list",
-        image: "Katieheadshot.jpg"
-    },
-    {
-        name: "Camie Sousa",
-        role: "Lead Research Technician",
-        bio: "Camie Sousa serves as the Lead Research Technician at Coalesce Biosciences, where she coordinates day-to-day laboratory operations and provides high-level technical support for critical research work. She plays a vital role in ensuring experimental consistency and maintaining the rigorous standards required for hazardous agent research and countermeasure development. With over a decade of expertise in ex vivo and in vivo animal models, Camie is fundamental in accelerating translational research by helping develop therapeutics and future treatment strategies. When she is not in the lab, you can find her at the Veterinary Emergency Clinic helping sick or injured pets. Outside of work, she enjoys time with her children, youth football, camping, and animals.",
-        icon: "dog",
-        image: "Camieheadshot.jpg"
-    },
-    {
-        name: "AJ Stone",
-        role: "Research Technician",
-        bio: "AJ Stone serves as a Research Technician at Coalesce Biosciences, bringing specialized technical support to the research team. Working across multiple investigative projects, AJ assists in the execution of complex laboratory protocols and ensures the integrity of experimental data. AJ is committed to the precision and safety required for high-consequence agent research, contributing to the development of novel therapeutics and medical countermeasures. With a strong focus on technical excellence and collaborative problem-solving, AJ plays a key role in supporting the lab's mission to understand and mitigate toxicological threats.",
-        icon: "test-tube-2",
-        image: "AJheadshot.jpg"
-    },
-    {
-        name: "Aaron Doney",
-        role: "Research Technician",
-        bio: "Aaron Doney supports the scientific mission of Coalesce Biosciences as a Research Technician, assisting with laboratory maintenance, experimental execution, and data collection. He graduated from Brigham Young University – Idaho with a B.S. in Biology, with an emphasis in Neuroscience. Since 2022, Aaron has been a laboratory technician supporting multiple research projects at the Wake Forest School of Medicine and WFIRM. He takes pride in the diverse opportunities and techniques he has mastered and enjoys teaching new methodologies to his peers. Working under the guidance of lead investigators, Aaron ensures the smooth operation of specialized research protocols involving chemical and biological threat agents. He is dedicated to upholding the highest safety standards while contributing to the development of life-saving medical countermeasures. Outside of work, Aaron enjoys spending time with his wife and kids, being outdoors, camping, and watching movies.",
-        icon: "brain",
-        image: "Aaronheadshot.jpg"
-    }
-];
+            {
+                name: "Dr. Ratnakar Tripathi",
+                role: "Senior Staff Scientist",
+                bio: "Dr. Ratnakar Tripathi is a Staff Scientist at the Wake Forest Institute for Regenerative Medicine. He earned his Ph.D. in Vision Science from Banaras Hindu University, Varanasi, India, and began his career at the LV Prasad Eye Institute, Hyderabad, India. He later pursued postdoctoral training and became an Assistant Research Professor at the University of Missouri, Columbia, USA. Dr. Tripathi currently serves as a Scientific Program Manager under the <strong class=\"text-white\">NIH U2C</strong> program, where he plays a pivotal role in advancing translational research on chemical threat agents. He is instrumental in the development and standardization of in vitro, ex vivo, and in vivo exposure procedures, ensuring methodological rigor and reproducibility across <strong class=\"text-white\">NIH CCRP</strong>-funded studies. Dr. Tripathi oversees sample collection protocols, data analysis pipelines, and quality assurance measures, while also providing technical assistance and specialized training to <strong class=\"text-white\">NIH CCRP</strong>-funded investigators and educational fellows. His leadership fosters consistency in experimental approaches and strengthens collaborative research efforts focused on vesicants identified in <strong class=\"text-white\">NIH CCRP</strong>-supported projects.",
+                image: "tripathi.jpg"
+            },
+            {
+                name: "Dr. Sarfaraz Ahmad",
+                role: "Senior Staff Scientist",
+                bio: "Dr. Sarfaraz Ahmad holds a PhD in Biochemistry from the Indian Institute of Toxicology Research, Lucknow, and completed his post-doctoral training at the US Environmental Protection Agency (EPA) and Atrium Health - Wake Forest University School of Medicine. He has extensive research experience in both experimental animal models and human subjects, with a strong foundation in toxicology, biochemistry, cell biology, molecular biology, physiology, and pharmacology. His expertise spans a broad range of laboratory techniques, including cellular and molecular biology, biochemical analysis, and analytical biochemistry such as HPLC, LC-MS, affinity column chromatography, PCR, multi-well plate-based immunoassays, ELISA, radioimmunoassay (RIA), cell/tissue culture, as well as immunological and histopathological techniques. Additionally, his leadership and management skills have been crucial in successfully managing NIH and foundation-funded research projects, mentoring junior researchers, and developing compelling grant applications. He has already effectively contributed to the various research projects currently underway at the Wake Forest Institute for Regenerative Medicine and Coalesce Biosciences. Outside of work, his hobbies include cooking, watching comedy movies, and playing badminton, ping-pong and cricket with family and friends.",
+                image: "ahmad.jpg"
+            },
+            {
+                name: "Katie Brigham, MS",
+                role: "Program Manager",
+                bio: "Katie Brigham serves as a Program Manager at Coalesce Biosciences as well as for other CCRP-funded projects, providing essential operational leadership and administrative oversight for complex research initiatives. Working closely with scientific leadership, she ensures project milestones are met through rigorous resource management, regulatory compliance coordination, and streamlined communication across multidisciplinary teams. She currently holds a Master's Degree in Translational Biotechnology from the Wake Forest Institute for Regenerative Medicine (WFIRM) as well as undergraduate degrees in Biology and Chemistry from East Carolina University. She has over a decade of experience as a lab technician in clinical and academic institutions with a specialization in molecular oncology and pathology. Her scientific skills include cell culture, organoids, molecular assays, immunohistochemistry, and high-resolution imaging. Outside of work, Katie enjoys spending time with her husband and two children, reading, hiking, and traveling.",
+                image: "brigham.jpg"
+            },
+            {
+                name: "Camie Sousa",
+                role: "Lead Research Technician",
+                bio: "Camie Sousa serves as the Lead Research Technician at Coalesce Biosciences, where she coordinates day-to-day laboratory operations and provides high-level technical support for critical research work. She plays a vital role in ensuring experimental consistency and maintaining the rigorous standards required for hazardous agent research and countermeasure development. With over a decade of expertise in ex vivo and in vivo animal models, Camie is fundamental in accelerating translational research by helping develop therapeutics and future treatment strategies. When she is not in the lab, you can find her at the Veterinary Emergency Clinic helping sick or injured pets. Outside of work, she enjoys time with her children, youth football, camping, and animals.",
+                image: "sousa.jpg"
+            },
+            {
+                name: "AJ Stone",
+                role: "Research Technician",
+                bio: "AJ Stone serves as a Research Technician at Coalesce Biosciences, bringing specialized technical support to the research team. Working across multiple investigative projects, AJ assists in the execution of complex laboratory protocols and ensures the integrity of experimental data. AJ is committed to the precision and safety required for high-consequence agent research, contributing to the development of novel therapeutics and medical countermeasures. With a strong focus on technical excellence and collaborative problem-solving, AJ plays a key role in supporting the lab's mission to understand and mitigate toxicological threats.",
+                image: "stone.jpg"
+            },
+            {
+                name: "Aaron Doney",
+                role: "Research Technician",
+                bio: "Aaron Doney supports the scientific mission of Coalesce Biosciences as a Research Technician, assisting with laboratory maintenance, experimental execution, and data collection. He graduated from Brigham Young University – Idaho with a B.S. in Biology, with an emphasis in Neuroscience. Since 2022, Aaron has been a laboratory technician supporting multiple research projects at the Wake Forest School of Medicine and WFIRM. He takes pride in the diverse opportunities and techniques he has mastered and enjoys teaching new methodologies to his peers. Working under the guidance of lead investigators, Aaron ensures the smooth operation of specialized research protocols involving chemical and biological threat agents. He is dedicated to upholding the highest safety standards while contributing to the development of life-saving medical countermeasures. Outside of work, Aaron enjoys spending time with his wife and kids, being outdoors, camping, and watching movies.",
+                image: "doney.jpg"
+            }
+        ];
+
+        const advisorData = [
+            {
+                name: "Dr. Alan Jacobson",
+                role: "Strategic Advisor",
+                bio: "Dr. Alan Jacobson is a Professor and Chair Emeritus of Microbiology and Physiological Systems at UMass Chan Medical School and the founder of PTC Therapeutics. His research focuses on post-transcriptional control of gene expression, and his leadership brings unparalleled strategic depth in biotechnology development and academic-industry integration.",
+                icon: "trending-up"
+            },
+            {
+                name: "Dr. Ron Hann",
+                role: "Strategic Advisor",
+                bio: "Dr. Ron Hann is the Director for Technology Integration at the Wake Forest Institute for Regenerative Medicine (WFIRM), Wake Forest University School of Medicine in Winston-Salem, NC. Dr. Hann is a former member of the Senior Executive Service (SES), in the Department of Defense (DoD). Dr. Hann also served over 26 years as an active-duty service member in the U.S. Army as a Chemical, Biological, Radiological and Nuclear (CBRN) defense officer. He is a decorated combat veteran and served twice as an Assistant Professor of Chemistry at the U.S. Military Academy at West Point. In his previous government executive role, Ron managed the DoD’s Chemical and Biological Defense Science and Technology portfolio. He also served for nearly two years as acting Director of Research and Development at the Defense Threat Reduction Agency where he led a dynamic team focused on providing the DoD with tools to counter weapons of mass destruction. At WFIRM, Dr. Hann supports development and growth for the institute focused on creating collaborative teams with government sponsors, industry and academic partners. Ron also sits on the Board of Directors for the CBRNe Industry Group and on the Executive Committee for the Medical CBRN Defense Consortium (MCDC). He is a strong supporter of veterans’ networks within North Carolina.",
+                icon: "shield-check"
+            }
+        ];
 
         const serviceData = [
             { title: "Hazardous Agents", desc: "Preclinical testing with emphasis on biological toxins and chemical agents.", icon: "shield", items: ["Biological Toxins", "Chemical Warfare", "Select Agents"] },
@@ -627,17 +657,8 @@ const teamData = [
         function handleInquiry(e) {
             e.preventDefault();
             const form = document.getElementById('inquiry-form');
-            const success = document.getElementById('form-success');
-            form.classList.add('hidden');
-            success.classList.remove('hidden');
-        }
-
-        function resetForm() {
-            const form = document.getElementById('inquiry-form');
-            const success = document.getElementById('form-success');
-            form.reset();
-            form.classList.remove('hidden');
-            success.classList.add('hidden');
+            form.innerHTML = `<div class="text-center py-10"><div class="w-16 h-16 bg-green-500/10 text-green-500 rounded-full flex items-center justify-center mx-auto mb-4"><i data-lucide="check"></i></div><h4 class="text-xl font-bold">Inquiry Sent</h4><p class="text-white/40">We will be in touch shortly.</p></div>`;
+            lucide.createIcons();
         }
 
         let isMenuOpen = false;
@@ -649,14 +670,14 @@ const teamData = [
 
         window.onscroll = function() {
             const nav = document.getElementById('navbar');
-            if (nav && window.scrollY > 50) {
+            if (window.scrollY > 50) {
                 nav.classList.add('glass-nav');
                 nav.classList.remove('py-6');
                 nav.classList.add('py-4');
-            } else if (nav) {
+            } else {
                 nav.classList.remove('glass-nav');
                 nav.classList.add('py-6');
-                nav.classList.add('py-4');
+                nav.classList.remove('py-4');
             }
         };
 
@@ -667,15 +688,9 @@ const teamData = [
                     <div class="p-8 md:p-12 bg-white/5 rounded-[3rem] border border-white/10 hover:border-blue-500/30 transition-all ${m.role.includes('Founder') ? 'bg-blue-600/5 border-blue-500/20' : ''}">
                         <div class="flex flex-col md:flex-row gap-8 items-start">
                             <div class="shrink-0 w-full md:w-auto flex justify-center md:block">
-                                ${m.image ? `
-                                    <div class="w-48 h-64 md:w-56 md:h-72 rounded-3xl overflow-hidden border border-white/10 group shadow-2xl relative bg-white/10">
-                                        <img src="${m.image}" alt="${m.name}" class="w-full h-full object-cover transition-all duration-700 scale-110 group-hover:scale-100" onerror="this.parentElement.innerHTML='<div class=&quot;w-full h-full flex items-center justify-center bg-blue-600/10 text-blue-500&quot;><i data-lucide=&quot;user&quot; class=&quot;w-12 h-12&quot;></i></div>'; lucide.createIcons();">
-                                    </div>
-                                ` : `
-                                    <div class="w-20 h-20 rounded-3xl flex items-center justify-center shrink-0 ${m.role.includes('Founder') ? 'bg-blue-600 text-white shadow-lg' : 'bg-blue-600/10 text-blue-500'}">
-                                        <i data-lucide="${m.icon}"></i>
-                                    </div>
-                                `}
+                                <div class="w-48 h-64 md:w-56 md:h-72 rounded-3xl overflow-hidden border border-white/10 group shadow-2xl relative bg-white/10">
+                                    <img src="${m.image}" alt="${m.name}" class="w-full h-full object-cover transition-all duration-700 scale-110 group-hover:scale-100" onerror="this.parentElement.innerHTML='<div class=&quot;w-full h-full flex items-center justify-center bg-blue-600/10 text-blue-500&quot;><i data-lucide=&quot;user&quot; class=&quot;w-12 h-12&quot;></i></div>'; lucide.createIcons();">
+                                </div>
                             </div>
                             <div class="flex-1">
                                 <h3 class="text-3xl font-bold mb-2 tracking-tight">${m.name}</h3>
@@ -686,6 +701,26 @@ const teamData = [
                                         <i data-lucide="${l.icon}" class="w-4 h-4"></i> ${l.label} <i data-lucide="external-link" class="w-3 h-3 opacity-50"></i>
                                     </a>
                                 `).join('') : ''}
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            const advisorContainer = document.getElementById('advisor-list');
+            if (advisorContainer) {
+                advisorContainer.innerHTML = advisorData.map(m => `
+                    <div class="p-8 md:p-12 bg-white/5 rounded-[3rem] border border-white/10 hover:border-blue-500/30 transition-all">
+                        <div class="flex flex-col md:flex-row gap-8 items-start">
+                            <div class="shrink-0 w-full md:w-auto flex justify-center md:block">
+                                <div class="w-20 h-20 rounded-3xl flex items-center justify-center bg-blue-600/10 text-blue-500">
+                                    <i data-lucide="${m.icon}"></i>
+                                </div>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-3xl font-bold mb-2 tracking-tight">${m.name}</h3>
+                                <p class="text-blue-500 uppercase tracking-widest text-xs font-bold mb-6">${m.role}</p>
+                                <p class="text-white/50 text-lg leading-relaxed font-light whitespace-pre-wrap">${m.bio}</p>
                             </div>
                         </div>
                     </div>
@@ -712,12 +747,10 @@ const teamData = [
                     </div>
                 `).join('');
             }
-
             lucide.createIcons();
         }
 
         window.onload = renderComponents;
     </script>
 </body>
-
 </html>
