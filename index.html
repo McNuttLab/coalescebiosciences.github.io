@@ -74,7 +74,7 @@
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <div class="flex items-center gap-4 cursor-pointer" onclick="navigateTo('home')">
               <div class="w-14 h-14 rounded-xl overflow-hidden bg-black flex items-center justify-center border border-white/10 shadow-xl">
-                    <img src="logo.png"
+                    <img src="logo.jpg"
                      alt="Coalesce Logo"
                      class="w-full h-full object-cover blend-logo"
                      onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'font-bold\'>C</span>'">
@@ -87,7 +87,7 @@
                 <button onclick="navigateTo('home')" class="text-sm font-medium hover:text-blue-500 transition-colors">Home</button>
                 <button onclick="navigateTo('about')" class="text-sm font-medium hover:text-blue-500 transition-colors">About</button>
                 <button onclick="navigateTo('services')" class="text-sm font-medium hover:text-blue-500 transition-colors">Services</button>
-                <button onclick="navigateTo('ccrp')" class="text-sm font-medium hover:text-blue-500 transition-colors">NIH-CCRP</button>
+                <button onclick="navigateTo('ccrp')" class="text-sm font-medium hover:text-blue-500 transition-colors">Vesicant ExRC</button>
                 <button onclick="navigateTo('team')" class="text-sm font-medium hover:text-blue-500 transition-colors">Team</button>
                 <button onclick="scrollToContact()" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-all">Contact Us</button>
             </div>
@@ -104,7 +104,7 @@
         <button onclick="navigateTo('home')" class="text-2xl font-medium">Home</button>
         <button onclick="navigateTo('about')" class="text-2xl font-medium">About</button>
         <button onclick="navigateTo('services')" class="text-2xl font-medium">Services</button>
-        <button onclick="navigateTo('ccrp')" class="text-2xl font-medium">NIH-CCRP</button>
+        <button onclick="navigateTo('ccrp')" class="text-2xl font-medium">Vesicant ExRC</button>
         <button onclick="navigateTo('team')" class="text-2xl font-medium">Team</button>
         <button onclick="toggleMenu()" class="absolute top-8 right-8"><i data-lucide="x" class="w-8 h-8"></i></button>
     </div>
@@ -141,7 +141,7 @@
                             <div class="absolute inset-0 border-[1px] border-blue-500/10 rounded-full spin-slow scale-125"></div>
                             <div class="absolute inset-0 flex items-center justify-center">
                                 <div class="w-[600px] h-[600px] flex items-center justify-center overflow-hidden group transition-transform duration-700 hover:scale-105 rounded-full border border-white/5 shadow-2xl">
-                                   <img src="logo.png"
+                                   <img src="logo.jpg"
                                         alt="Coalesce"
                                         class="w-full h-full object-cover opacity-100 shadow-2xl">
                                 </div>
@@ -286,13 +286,17 @@
                         <div class="absolute inset-0 z-0">
                             <img src="WFIRM.jpg" 
                                  alt="WFIRM" 
-                                 class="w-full h-full object-cover opacity-20">
+                                 class="w-full h-full object-cover opacity-20"
+                                 onerror="this.src='https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop'">
                             <div class="absolute inset-0 bg-gradient-to-r from-gray-950/90 via-gray-950/40 to-transparent"></div>
                         </div>
                         <div class="max-w-4xl relative z-10">
                             <h3 class="text-2xl md:text-3xl font-medium text-white mb-6 tracking-tight">Institutional Synergy</h3>
+                            <p class="text-white/80 text-lg md:text-xl font-light leading-relaxed mb-6">
+                                Coalesce Biosciences is strategically integrated with the <span class="text-white font-medium">Wake Forest School of Medicine</span> and the <span class="text-white font-medium">Wake Forest Institute for Regenerative Medicine (WFIRM)</span>. This deep relationship provides our team and partners with unparalleled access to the field of <span class="text-white font-medium">regenerative medicine</span> and <span class="text-white font-medium">world-class facilities</span>.
+                            </p>
                             <p class="text-white/80 text-lg md:text-xl font-light leading-relaxed mb-8">
-                                Embedded within the <span class="text-white font-medium">Wake Forest School of Medicine</span> and the <span class="text-white font-medium">Wake Forest Institute for Regenerative Medicine (WFIRM)</span>, we provide direct access to world-class facilities and pioneering research networks.
+                                By working alongside <span class="text-white font-medium">leading scientists</span> and leveraging <span class="text-white font-medium">innovative technologies</span>, we translate basic research into high-fidelity models and life-saving countermeasures. This synergy ensures that our preclinical studies benefit from the most advanced scientific insights and cutting-edge laboratory infrastructure available today.
                             </p>
                             <a href="https://school.wakehealth.edu/research/institutes-and-centers/wake-forest-institute-for-regenerative-medicine" target="_blank" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-bold tracking-tight transition-all group shadow-lg">
                                 Visit WFIRM 
@@ -329,8 +333,20 @@
                                             <p class="text-white text-lg font-medium">10,200 sq ft <span class="text-white/40 font-light text-sm">of neat agent research space</span></p>
                                         </div>
                                         <div>
-                                            <div class="text-blue-500 text-[10px] uppercase tracking-widest font-bold mb-1">Regulated Handling</div>
-                                            <p class="text-white/60 font-light text-sm">Regulatory clearance for <strong class="text-white">Schedule I and II chemical agents</strong> and high-potency toxins.</p>
+                                            <div class="text-blue-500 text-[10px] uppercase tracking-widest font-bold mb-1">Academic Research space</div>
+                                            <p class="text-white text-lg font-medium">3,000 sq ft <span class="text-white/40 font-light text-sm">with access to core resources</span></p>
+                                        </div>
+                                        <div>
+                                            <div class="text-blue-500 text-[10px] uppercase tracking-widest font-bold mb-1">Specialized Vivarium</div>
+                                            <p class="text-white/60 font-light text-sm">Capable of housing both <strong class="text-white">rodents and USDA species</strong>.</p>
+                                        </div>
+                                        <div>
+                                            <div class="text-blue-500 text-[10px] uppercase tracking-widest font-bold mb-1">Translational Models</div>
+                                            <p class="text-white/60 font-light text-sm">Expertise in <strong class="text-white">mice, rats, guinea pigs, rabbits, swine, and NHP</strong>.</p>
+                                        </div>
+                                        <div>
+                                            <div class="text-blue-500 text-[10px] uppercase tracking-widest font-bold mb-1">Synthesis & Storage</div>
+                                            <p class="text-white/60 font-light text-sm">In-house <strong class="text-white">chemical synthesis and storage</strong> facilities.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -339,22 +355,76 @@
                                 <h4 class="text-2xl font-medium tracking-tight text-white flex items-center gap-3">
                                     <i data-lucide="bar-chart-3" class="text-blue-500 w-6 h-6"></i> Technical Capabilities
                                 </h4>
-                                <div class="grid md:grid-cols-2 gap-8">
-                                    <div class="p-8 bg-white/5 border border-white/10 rounded-3xl space-y-4">
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                    <div class="p-8 bg-white/5 border border-white/10 rounded-3xl space-y-4 hover:border-blue-500/30 transition-all">
                                         <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center text-blue-500">
                                             <i data-lucide="microscope"></i>
                                         </div>
                                         <h5 class="text-blue-500 text-[10px] uppercase tracking-widest font-bold">Next-Gen Organoids</h5>
-                                        <p class="text-white/40 text-sm font-light">High-fidelity, human-derived organoids providing mechanistic insights into tissue-specific injury.</p>
+                                        <p class="text-white/40 text-sm font-light leading-relaxed">High-fidelity, human-derived organoids providing mechanistic insights into tissue-specific injury.</p>
                                     </div>
-                                    <div class="p-8 bg-white/5 border border-white/10 rounded-3xl space-y-4">
+                                    <div class="p-8 bg-white/5 border border-white/10 rounded-3xl space-y-4 hover:border-blue-500/30 transition-all">
                                         <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center text-blue-500">
                                             <i data-lucide="wind"></i>
                                         </div>
                                         <h5 class="text-blue-500 text-[10px] uppercase tracking-widest font-bold">Exposure Protocols</h5>
-                                        <p class="text-white/40 text-sm font-light">Precision-engineered delivery systems mimicking real-world inhalation and dermal scenarios.</p>
+                                        <p class="text-white/40 text-sm font-light leading-relaxed">Precision-engineered delivery systems mimicking real-world inhalation and dermal scenarios.</p>
+                                    </div>
+                                    <div class="p-8 bg-white/5 border border-white/10 rounded-3xl space-y-4 hover:border-blue-500/30 transition-all">
+                                        <div class="w-10 h-10 bg-blue-600/10 rounded-lg flex items-center justify-center text-blue-500">
+                                            <i data-lucide="activity"></i>
+                                        </div>
+                                        <h5 class="text-blue-500 text-[10px] uppercase tracking-widest font-bold">Vesicant Modeling</h5>
+                                        <p class="text-white/40 text-sm font-light leading-relaxed">Development and validation of proprietary chemical vesicant exposure models for high-fidelity in vivo studies.</p>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Collaboration Frameworks Section -->
+                    <div class="mt-32">
+                        <div class="flex items-center gap-4 mb-16">
+                            <div class="h-px bg-white/10 flex-1"></div>
+                            <h3 class="text-3xl md:text-4xl font-medium tracking-tight text-white px-4">Collaboration Frameworks</h3>
+                            <div class="h-px bg-white/10 flex-1"></div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <!-- Academic Institutions -->
+                            <div class="p-8 bg-white/[0.02] border border-white/5 rounded-3xl hover:border-blue-500/20 transition-all group">
+                                <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                                    <i data-lucide="graduation-cap"></i>
+                                </div>
+                                <h4 class="text-lg font-bold mb-3 text-white tracking-tight">Academic Institutions</h4>
+                                <p class="text-sm text-white/40 leading-relaxed font-light">Collaborative research programs with leading universities, bridging basic science and medical defense countermeasures.</p>
+                            </div>
+
+                            <!-- Government Research Contracts -->
+                            <div class="p-8 bg-white/[0.02] border border-white/5 rounded-3xl hover:border-blue-500/20 transition-all group">
+                                <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                                    <i data-lucide="landmark"></i>
+                                </div>
+                                <h4 class="text-lg font-bold mb-3 text-white tracking-tight">Government Contracts</h4>
+                                <p class="text-sm text-white/40 leading-relaxed font-light">Direct performance of R&D for federal health security, defense, and preparedness agencies.</p>
+                            </div>
+
+                            <!-- Industry Partnerships -->
+                            <div class="p-8 bg-white/[0.02] border border-white/5 rounded-3xl hover:border-blue-500/20 transition-all group">
+                                <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                                    <i data-lucide="briefcase"></i>
+                                </div>
+                                <h4 class="text-lg font-bold mb-3 text-white tracking-tight">Industry Partnerships</h4>
+                                <p class="text-sm text-white/40 leading-relaxed font-light">Strategic alliances with biotech and pharmaceutical leaders to accelerate MCM product development.</p>
+                            </div>
+
+                            <!-- Fee for Service Agreements -->
+                            <div class="p-8 bg-white/[0.02] border border-white/5 rounded-3xl hover:border-blue-500/20 transition-all group">
+                                <div class="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center text-blue-500 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                                    <i data-lucide="file-check"></i>
+                                </div>
+                                <h4 class="text-lg font-bold mb-3 text-white tracking-tight">Fee for Service</h4>
+                                <p class="text-sm text-white/40 leading-relaxed font-light">Direct CRO services for standardized or customized safety and efficacy studies for therapeutic candidates.</p>
                             </div>
                         </div>
                     </div>
@@ -362,26 +432,40 @@
             </div>
         </div>
 
-        <!-- NIH-CCRP Page -->
+        <!-- Vesicant ExRC Page -->
         <div id="page-ccrp" class="page-content hidden animate-slide-up">
             <div class="pt-40 px-8 md:px-16 max-w-7xl mx-auto pb-32 text-left">
                 <div class="mb-12 max-w-4xl">
-                    <h2 class="text-5xl md:text-7xl font-medium tracking-tight mb-8">Academic <span class="text-blue-500">Strategic Partnerships</span></h2>
+                    <h2 class="text-5xl md:text-7xl font-medium tracking-tight mb-8">Wake Forest University <span class="text-blue-500">Vesicant Exposure Resource and Coordination Core (Vesicant ExRC)</span></h2>
                     
                     <div class="p-8 md:p-12 bg-white/[0.02] border border-white/10 border rounded-[3rem] mb-16 space-y-8">
-                        <!-- New Mission Paragraph -->
+                        <!-- Mission Paragraph -->
                         <p class="text-white/60 text-lg md:text-xl font-light leading-relaxed">
                             The <strong class="text-white">NIH Chemical Countermeasures Research Program (CCRP)</strong> is a component of the broader civilian biodefense research effort. Its mission is to integrate cutting-edge research with the latest technological advances in science and medicine to enhance national medical and public health preparedness for, response to, and recovery from disasters and public health chemical emergencies.
                         </p>
+                        
+                        <!-- Primary Program Button -->
+                        <div class="pb-4">
+                            <a href="https://www.niaid.nih.gov/research/chemical-countermeasures-program" 
+                               target="_blank" 
+                               class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-2xl font-bold tracking-tight transition-all group">
+                                Official NIH CCRP Program
+                                <i data-lucide="external-link" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+                            </a>
+                        </div>
 
                         <p class="text-white/80 text-xl md:text-2xl font-light leading-relaxed border-t border-white/5 pt-8">
-                            <strong class="text-white">Coalesce Biosciences</strong> is a specialized contract research organization embedded within a leading academic medical center, delivering rigorous toxicology and translational research for commercial, government, and academic partners.
+                            The <strong class="text-white">Wake Forest University Vesicant Exposure Resource and Coordination Core (Vesicant ExRC)</strong> provides a state-of-the-art facility dedicated to accelerating the development of medical countermeasures for hazardous chemical injuries. Led by a multidisciplinary team of experts, the program offers investigators a comprehensive suite of advanced in vivo, ex vivo, and in vitro experimental models focused on ocular, dermal, and pulmonary tissues. By standardizing innovative analytical methods and fostering collaboration, the Vesicant ExRC streamlines the study of toxic mechanisms to enhance national chemical research and preparedness. <span class="text-blue-400">See the 2025 Program Portfolio for current CCRP-supported projects.</span>
+                        </p>
+
+                        <p class="text-white/80 text-xl md:text-2xl font-light leading-relaxed border-t border-white/5 pt-8">
+                            Embedded within a leading academic medical center, the <strong class="text-white">Vesicant ExRC</strong> delivers rigorous toxicology and translational research for government and academic partners. We provide end-to-end support for studies involving <strong class="text-white">Schedule I & II chemical agents</strong>, combining academic scientific depth with mission-focused execution to support the NIH civilian biodefense research effort.
                         </p>
                         
                         <div class="flex flex-col lg:flex-row items-center gap-12 border-t border-white/5 pt-8">
                             <div class="flex-1">
                                 <p class="text-white/60 text-lg md:text-xl font-light leading-relaxed">
-                                    We provide end-to-end support for studies involving <strong class="text-white">Schedule I & II chemical agents</strong> and biological toxins, combining academic scientific depth with CRO execution. We provide an NIH-subsidized core to conduct this work called the <strong class="text-white font-medium italic">Wake Forest University Vesicant Exposure Resource and Coordination Core</strong>.
+                                    We specifically support university research teams utilizing federal grant mechanisms to explore toxicological mechanisms and develop life-saving medical countermeasures. Through our unique partnership with the Wake Forest Institute for Regenerative Medicine, we provide access to high-fidelity organoid and animal models.
                                 </p>
                             </div>
                             
@@ -390,14 +474,14 @@
                                 <!-- Wake Forest School of Medicine Logo Spot -->
                                 <div class="w-full h-24 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center p-4 group transition-all hover:bg-white/10 hover:border-blue-500/30">
                                      <div class="text-white/20 group-hover:text-blue-500/40 transition-colors mb-1">
-                                         <i data-lucide="WFIRM_logo.jpg" class="w-6 h-6"></i>
+                                         <i data-lucide="landmark" class="w-6 h-6"></i>
                                      </div>
                                      <span class="text-[9px] uppercase tracking-widest font-bold text-white/20 text-center leading-tight">Wake Forest School of Medicine</span>
                                 </div>
                                 <!-- NIAID Logo Spot -->
                                 <div class="w-full h-24 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center p-4 group transition-all hover:bg-white/10 hover:border-blue-500/30">
                                      <div class="text-white/20 group-hover:text-blue-500/40 transition-colors mb-1">
-                                         <i data-lucide="NIAID.jpg" class="w-6 h-6"></i>
+                                         <i data-lucide="microscope" class="w-6 h-6"></i>
                                      </div>
                                      <span class="text-[9px] uppercase tracking-widest font-bold text-white/20 text-center leading-tight">NIAID</span>
                                 </div>
@@ -405,16 +489,10 @@
                         </div>
 
                         <div class="pt-4 flex flex-wrap gap-4">
-                            <a href="https://www.niaid.nih.gov/research/chemical-countermeasures-program" 
-                               target="_blank" 
-                               class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-2xl font-bold tracking-tight transition-all group">
-                                Official NIH CCRP Program
-                                <i data-lucide="external-link" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
-                            </a>
                             <a href="#" 
                                class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-4 rounded-2xl font-bold tracking-tight transition-all group">
                                 2025 Program Portfolio
-                                <i data-lucide="NIH CCRP 2025 Program Portfolio.pdf" class="w-4 h-4 group-hover:scale-110 transition-transform"></i>
+                                <i data-lucide="file-text" class="w-4 h-4 group-hover:scale-110 transition-transform"></i>
                             </a>
                             <button onclick="scrollToContact()" class="inline-flex items-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 text-white px-8 py-4 rounded-2xl font-bold tracking-tight transition-all">
                                 Propose a Collaboration
@@ -468,9 +546,13 @@
                     <div class="space-y-8">
                         <h3 class="text-3xl md:text-4xl font-medium text-white tracking-tight">Collaborative Funding & Mission Support</h3>
                         <p class="text-white/60 text-lg leading-relaxed font-light">
-                            Coalesce Biosciences actively partners with academic investigators from major research universities to strengthen federal biodefense applications, specifically:
+                            The Vesicant ExRC actively partners with academic investigators from major research universities to strengthen federal biodefense applications, specifically:
                         </p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-center gap-4 p-4 bg-white/5 rounded-2xl border border-white/5">
+                                <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                                <span class="text-white/80 font-medium text-sm">NIH U2C Grants</span>
+                            </div>
                             <div class="flex items-center gap-4 p-4 bg-white/5 rounded-2xl border border-white/5">
                                 <div class="w-2 h-2 rounded-full bg-blue-500"></div>
                                 <span class="text-white/80 font-medium text-sm">NIH Research Grants</span>
@@ -481,11 +563,7 @@
                             </div>
                             <div class="flex items-center gap-4 p-4 bg-white/5 rounded-2xl border border-white/5">
                                 <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-                                <span class="text-white/80 font-medium text-sm">CounterACT U01 / U54</span>
-                            </div>
-                            <div class="flex items-center gap-4 p-4 bg-white/5 rounded-2xl border border-white/5">
-                                <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-                                <span class="text-white/80 font-medium text-sm">SBIR/STTR Translational Grants</span>
+                                <span class="text-white/80 font-medium text-sm">CounterACT U01 Projects</span>
                             </div>
                         </div>
                     </div>
@@ -495,7 +573,7 @@
                         </div>
                         <h4 class="text-2xl font-bold text-white">Grant Success Through Partnership</h4>
                         <p class="text-white/90 text-lg font-light leading-relaxed">
-                            "By incorporating Coalesce as your specialized research partner, your NIH grant application gains immediate access to the regulatory clearance, specialized modeling capacity, and high-containment facility needed to win federal awards."
+                            "By partnering with the Vesicant ExRC as your specialized research core, your NIH grant application gains immediate access to the regulatory clearance, specialized modeling capacity, and high-containment facility needed to win federal awards."
                         </p>
                         <div class="pt-4">
                             <button onclick="scrollToContact()" class="bg-white text-blue-600 px-8 py-3 rounded-xl font-bold hover:bg-blue-50 transition-all">
@@ -511,6 +589,12 @@
         <div id="page-services" class="page-content hidden animate-slide-up">
             <div class="pt-40 px-8 md:px-16 max-w-7xl mx-auto pb-32 text-left">
                 <h2 class="text-5xl md:text-7xl font-medium tracking-tight mb-8">Preclinical <span class="text-blue-500">Research</span></h2>
+                
+                <!-- Business Model Paragraph -->
+                <p class="text-white/60 text-lg md:text-xl font-light leading-relaxed mb-12 max-w-4xl">
+                    Coalesce Biosciences provides a comprehensive preclinical research platform designed to bridge the gap between basic toxicological discovery and mission-critical countermeasures. Our business model offers partners <strong class="text-white font-medium">deep expertise in multiple organ system toxicology</strong> and <strong class="text-white font-medium">precision-engineered chemical and biological exposure delivery systems</strong>. We specialize in conducting rigorous <strong class="text-white font-medium">medical countermeasure efficacy and safety studies</strong>, supported by sophisticated <strong class="text-white font-medium">analytical dynamics</strong> to define the mechanisms of injury and the trajectory of recovery.
+                </p>
+
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-32" id="services-grid"></div>
             </div>
         </div>
@@ -595,7 +679,7 @@
             {
                 name: "Katie Brigham, MS",
                 role: "Program Manager",
-                bio: "Katie Brigham serves as a Program Manager at Coalesce Biosciences as well as for other CCRP-funded projects, providing essential operational leadership and administrative oversight for complex research initiatives. Working closely with scientific leadership, she ensures project milestones are met through rigorous resource management, regulatory compliance coordination, and streamlined communication across multidisciplinary teams. She currently holds a Master's Degree in Translational Biotechnology from the Wake Forest Institute for Regenerative Medicine (WFIRM) as well as undergraduate degrees in Biology and Chemistry from East Carolina University. She has over a decade of experience as a lab technician in clinical and academic institutions with a specialization in molecular oncology and pathology. Her scientific skills include cell culture, organoids, molecular assays, immunohistochemistry, and high-resolution imaging. Outside of work, Katie enjoys spending time with her husband and two children, reading, hiking, and traveling.",
+                bio: "Katie Brigham serves as a Program Manager at Coalesce Biosciences as well as for other CCRP-funded projects, providing essential operational leadership and administrative oversight for complex research initiatives. Working closely with scientific leadership, she ensures project milestones are met through rigorous resource management, regulatory compliance coordination, and streamlined communication across multidisciplinary teams. She currently holds a Master's Degree in Translational Biotechnology from the Wake Forest Institute for Regenerative Medicine (WFIRM) as well as undergraduate degrees in Biology and Chemistry from East Carolina University. She has over a decade of experience as a lab technician in clinical and academic institutions with a specialization in molecular oncology and pathology. His scientific skills include cell culture, organoids, molecular assays, immunohistochemistry, and high-resolution imaging. Outside of work, Katie enjoys spending time with her husband and two children, reading, hiking, and traveling.",
                 image: "Katieheadshot.jpg"
             },
             {
@@ -622,19 +706,20 @@
             {
                 name: "Dr. Alan Jacobson",
                 role: "Strategic Advisor",
-                bio: "Dr. Alan Jacobson is a Professor and Chair Emeritus of Microbiology and Physiological Systems at UMass Chan Medical School and the founder of PTC Therapeutics. His research focuses on post-transcriptional control of gene expression, and his leadership brings unparalleled strategic depth in biotechnology development and academic-industry integration.",
+                bio: "",
                 icon: "trending-up"
             },
             {
                 name: "Dr. Ron Hann",
                 role: "Strategic Advisor",
                 bio: "Dr. Ron Hann is the Director for Technology Integration at the Wake Forest Institute for Regenerative Medicine (WFIRM), Wake Forest University School of Medicine in Winston-Salem, NC. Dr. Hann is a former member of the Senior Executive Service (SES), in the Department of Defense (DoD). Dr. Hann also served over 26 years as an active-duty service member in the U.S. Army as a Chemical, Biological, Radiological and Nuclear (CBRN) defense officer. He is a decorated combat veteran and served twice as an Assistant Professor of Chemistry at the U.S. Military Academy at West Point. In his previous government executive role, Ron managed the DoD’s Chemical and Biological Defense Science and Technology portfolio. He also served for nearly two years as acting Director of Research and Development at the Defense Threat Reduction Agency where he led a dynamic team focused on providing the DoD with tools to counter weapons of mass destruction. At WFIRM, Dr. Hann supports development and growth for the institute focused on creating collaborative teams with government sponsors, industry and academic partners. Ron also sits on the Board of Directors for the CBRNe Industry Group and on the Executive Committee for the Medical CBRN Defense Consortium (MCDC). He is a strong supporter of veterans’ networks within North Carolina.",
-                icon: "Hannheadshot.jpg"
+                icon: "shield-check"
             }
         ];
 
         const serviceData = [
             { title: "Hazardous Agents", desc: "Preclinical testing with emphasis on biological toxins and chemical agents.", icon: "shield", items: ["Biological Toxins", "Chemical Warfare", "Select Agents"] },
+            { title: "Medical Countermeasures (MCM)", desc: "Discovery and development of therapeutics to diagnose, prevent, and treat injuries from toxic exposures.", icon: "heart-pulse", items: ["MCM Discovery & Development", "Efficacy & Safety Profiles", "Natural History of Injury", "CounterACT Pipeline Support"] },
             { title: "Specialized Toxicology", desc: "Targeted organ assessments for high-consequence exposures.", icon: "stethoscope", items: ["Dermal & Pulmonary", "Neural & Ocular", "Systemic"] },
             { title: "Model Development", desc: "Validation of novel animal models and human organoid platforms.", icon: "dna", items: ["Human Organoids", "In Vivo Validation", "In Vitro Screening"] },
             { title: "Analytical Dynamics", desc: "Precision modeling of physiological responses and agent behavior.", icon: "trending-up", items: ["Pharmacokinetic Modeling", "Dose-Response Studies", "Mechanism of Injury"] }
@@ -656,8 +741,20 @@
 
         function handleInquiry(e) {
             e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+            
+            // Constructing a mailto link to provide "functional" behavior in a static environment
+            const subject = `Inquiry from ${data.firstName} ${data.lastName}`;
+            const body = `Contact Name: ${data.firstName} ${data.lastName}\nEmail: ${data.email}\nPhone: ${data.phone || 'N/A'}\n\nMessage:\n${data.message}`;
+            const mailtoUrl = `mailto:WFCBCORE@Advocatehealth.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Attempt to trigger the email client
+            window.location.href = mailtoUrl;
+
+            // Update UI to show success
             const form = document.getElementById('inquiry-form');
-            form.innerHTML = `<div class="text-center py-10"><div class="w-16 h-16 bg-green-500/10 text-green-500 rounded-full flex items-center justify-center mx-auto mb-4"><i data-lucide="check"></i></div><h4 class="text-xl font-bold">Inquiry Sent</h4><p class="text-white/40">We will be in touch shortly.</p></div>`;
+            form.innerHTML = `<div class="text-center py-10"><div class="w-16 h-16 bg-green-500/10 text-green-500 rounded-full flex items-center justify-center mx-auto mb-4"><i data-lucide="check"></i></div><h4 class="text-xl font-bold">Inquiry Sent</h4><p class="text-white/40">We will be in touch shortly regarding your request.</p></div>`;
             lucide.createIcons();
         }
 
@@ -748,6 +845,16 @@
                 `).join('');
             }
             lucide.createIcons();
+        }
+
+        function scrollToContact() {
+            navigateTo('home');
+            setTimeout(() => {
+                const element = document.getElementById('contact-section');
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
         }
 
         window.onload = renderComponents;
