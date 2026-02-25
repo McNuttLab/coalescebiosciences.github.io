@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -89,7 +89,7 @@
                 <button onclick="navigateTo('services')" class="text-sm font-medium hover:text-blue-500 transition-colors">Services</button>
                 <button onclick="navigateTo('ccrp')" class="text-sm font-medium hover:text-blue-500 transition-colors">Vesicant ExRC</button>
                 <button onclick="navigateTo('team')" class="text-sm font-medium hover:text-blue-500 transition-colors">Team</button>
-                <button onclick="scrollToContact()" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-all">Contact Us</button>
+                <button onclick="scrollToContact()" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg hover:shadow-blue-500/20 active:scale-95">Contact Us</button>
             </div>
 
             <!-- Mobile Menu Toggle -->
@@ -106,6 +106,7 @@
         <button onclick="navigateTo('services')" class="text-2xl font-medium">Services</button>
         <button onclick="navigateTo('ccrp')" class="text-2xl font-medium">Vesicant ExRC</button>
         <button onclick="navigateTo('team')" class="text-2xl font-medium">Team</button>
+        <button onclick="scrollToContact()" class="bg-blue-600 text-white px-8 py-3 rounded-xl text-xl font-bold">Contact Us</button>
         <button onclick="toggleMenu()" class="absolute top-8 right-8"><i data-lucide="x" class="w-8 h-8"></i></button>
     </div>
 
@@ -444,7 +445,7 @@
                             The <strong class="text-white">NIH Chemical Countermeasures Research Program (CCRP)</strong> is a component of the broader civilian biodefense research effort. Its mission is to integrate cutting-edge research with the latest technological advances in science and medicine to enhance national medical and public health preparedness for, response to, and recovery from disasters and public health chemical emergencies.
                         </p>
                         
-                        <!-- Primary Program Button -->
+                        <!-- Primary Program Button moved under intro -->
                         <div class="pb-4">
                             <a href="https://www.niaid.nih.gov/research/chemical-countermeasures-program" 
                                target="_blank" 
@@ -472,28 +473,22 @@
                             <!-- Institutional Partners Logo Spot -->
                             <div class="flex flex-col gap-4 w-full md:w-auto lg:w-64">
                                 <!-- Wake Forest School of Medicine Logo Spot -->
-                                <div class="w-full h-24 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center p-4 group transition-all hover:bg-white/10 hover:border-blue-500/30">
-                                     <div class="text-white/20 group-hover:text-blue-500/40 transition-colors mb-1">
-                                         <i data-lucide="landmark" class="w-6 h-6"></i>
-                                     </div>
-                                     <span class="text-[9px] uppercase tracking-widest font-bold text-white/20 text-center leading-tight">Wake Forest School of Medicine</span>
+                                <div class="w-full h-24 bg-white/5 border border-white/10 rounded-2xl overflow-hidden flex items-center justify-center transition-all hover:bg-white/10 hover:border-blue-500/30">
+                                     <img src="WFIRM_logo.jpg" alt="Wake Forest School of Medicine" class="w-full h-full object-contain p-4" onerror="this.style.display='none'">
                                 </div>
                                 <!-- NIAID Logo Spot -->
-                                <div class="w-full h-24 bg-white/5 border border-white/10 rounded-2xl flex flex-col items-center justify-center p-4 group transition-all hover:bg-white/10 hover:border-blue-500/30">
-                                     <div class="text-white/20 group-hover:text-blue-500/40 transition-colors mb-1">
-                                         <i data-lucide="microscope" class="w-6 h-6"></i>
-                                     </div>
-                                     <span class="text-[9px] uppercase tracking-widest font-bold text-white/20 text-center leading-tight">NIAID</span>
+                                <div class="w-full h-24 bg-white/5 border border-white/10 rounded-2xl overflow-hidden flex items-center justify-center transition-all hover:bg-white/10 hover:border-blue-500/30">
+                                     <img src="NIAID.jpg" alt="NIAID" class="w-full h-full object-contain p-4" onerror="this.style.display='none'">
                                 </div>
                             </div>
                         </div>
-                        <div class="pt-4 flex flex-wrap gap-4">
-                          <a href="NIH%20CCRP%202025%20Program%20Portfolio.pdf"
-                             target="_blank"
-                             class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-4 rounded-2xl font-bold tracking-tight transition-all group">
-                              2025 Program Portfolio
-                             <i data-lucide="file-text" class="w-4 h-4 group-hover:scale-110 transition-transform"></i>
-                           </a>
+
+                        <div class="pt-8 flex flex-wrap gap-4">
+                            <a href="#" 
+                               class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-4 rounded-2xl font-bold tracking-tight transition-all group">
+                                2025 Program Portfolio
+                                <i data-lucide="file-text" class="w-4 h-4 group-hover:scale-110 transition-transform"></i>
+                            </a>
                             <button onclick="scrollToContact()" class="inline-flex items-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 text-white px-8 py-4 rounded-2xl font-bold tracking-tight transition-all">
                                 Propose a Collaboration
                             </button>
@@ -555,11 +550,11 @@
                             </div>
                             <div class="flex items-center gap-4 p-4 bg-white/5 rounded-2xl border border-white/5">
                                 <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-                                <span class="text-white/80 font-medium text-sm">NIH Research Grants</span>
+                                <span class="text-white/80 font-medium text-sm">NIH R01 Research Grants</span>
                             </div>
                             <div class="flex items-center gap-4 p-4 bg-white/5 rounded-2xl border border-white/5">
                                 <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-                                <span class="text-white/80 font-medium text-sm">Exploratory Grant Awards</span>
+                                <span class="text-white/80 font-medium text-sm">NIH R21 Exploratory Grants</span>
                             </div>
                             <div class="flex items-center gap-4 p-4 bg-white/5 rounded-2xl border border-white/5">
                                 <div class="w-2 h-2 rounded-full bg-blue-500"></div>
@@ -658,34 +653,34 @@
     <script>
         const teamData = [
             {
-                name: "Dr. Patrick McNutt",
+                name: "Patrick McNutt, PhD",
                 role: "Founder and Principal Investigator",
                 bio: "Patrick earned undergraduate degrees in Biology and Chemistry before completing a PhD in Cellular and Molecular Biology at Princeton University. After graduate school, he served as an Army officer for eight years, including a tour in Iraq. In 2010, he accepted a DoD Principal Investigator position where he built a large research program developing countermeasures for highly dangerous biological and chemical toxins affecting the central and peripheral nervous systems as well as the cornea of the eye. In 2020, he returned to Wake Forest as an Associate Professor at the Institute for Regenerative Medicine (WFIRM), where he (1) conducts fundamental studies to understand toxic mechanisms of diverse poisons at scales ranging from individual receptors to multi-organ physiological responses; (2) develops comprehensive therapies that mitigate toxicity and promote regeneration; and (3) exploits WFIRM's unique capabilities to develop organoid models of complex diseases and toxic injuries.",
                 image: "McNuttheadshot.jpg",
                 links: [{ label: "Google Scholar", url: "https://scholar.google.com/citations?user=ceRIHocAAAAJ&hl", icon: "graduation-cap" }]
             },
             {
-                name: "Dr. Ratnakar Tripathi",
-                role: "Senior Staff Scientist",
-                bio: "Dr. Ratnakar Tripathi is a Staff Scientist at the Wake Forest Institute for Regenerative Medicine. He earned his Ph.D. in Vision Science from Banaras Hindu University, Varanasi, India, and began his career at the LV Prasad Eye Institute, Hyderabad, India. He later pursued postdoctoral training and became an Assistant Research Professor at the University of Missouri, Columbia, USA. Dr. Tripathi currently serves as a Scientific Program Manager under the <strong class=\"text-white\">NIH U2C</strong> program, where he plays a pivotal role in advancing translational research on chemical threat agents. He is instrumental in the development and standardization of in vitro, ex vivo, and in vivo exposure procedures, ensuring methodological rigor and reproducibility across <strong class=\"text-white\">NIH CCRP</strong>-funded studies. Dr. Tripathi oversees sample collection protocols, data analysis pipelines, and quality assurance measures, while also providing technical assistance and specialized training to <strong class=\"text-white\">NIH CCRP</strong>-funded investigators and educational fellows. His leadership fosters consistency in experimental approaches and strengthens collaborative research efforts focused on vesicants identified in <strong class=\"text-white\">NIH CCRP</strong>-supported projects.",
+                name: "Ratnakar Tripathi, PhD",
+                role: "Scientific Program Manager",
+                bio: "Ratnakar Tripathi, PhD is a Staff Scientist at the Wake Forest Institute for Regenerative Medicine. He earned his Ph.D. in Vision Science from Banaras Hindu University, Varanasi, India, and began his career at the LV Prasad Eye Institute, Hyderabad, India. He later pursued postdoctoral training and became an Assistant Research Professor at the University of Missouri, Columbia, USA. Dr. Tripathi currently serves as a Scientific Program Manager under the NIH U2C program, where he plays a pivotal role in advancing translational research on chemical threat agents. He is instrumental in the development and standardization of in vitro, ex vivo, and in vivo exposure procedures, ensuring methodological rigor and reproducibility across NIH CCRP-funded studies. Dr. Tripathi oversees sample collection protocols, data analysis pipelines, and quality assurance measures, while also providing technical assistance and specialized training to NIH CCRP-funded investigators and educational fellows. His leadership fosters consistency in experimental approaches and strengthens collaborative research efforts focused on vesicants identified in NIH CCRP-supported projects.",
                 image: "tripathiheadshot.jpg"
             },
             {
-                name: "Dr. Sarfaraz Ahmad",
+                name: "Sarfaraz Ahmad, PhD",
                 role: "Senior Staff Scientist",
-                bio: "Dr. Sarfaraz Ahmad holds a PhD in Biochemistry from the Indian Institute of Toxicology Research, Lucknow, and completed his post-doctoral training at the US Environmental Protection Agency (EPA) and Atrium Health - Wake Forest University School of Medicine. He has extensive research experience in both experimental animal models and human subjects, with a strong foundation in toxicology, biochemistry, cell biology, molecular biology, physiology, and pharmacology. His expertise spans a broad range of laboratory techniques, including cellular and molecular biology, biochemical analysis, and analytical biochemistry such as HPLC, LC-MS, affinity column chromatography, PCR, multi-well plate-based immunoassays, ELISA, radioimmunoassay (RIA), cell/tissue culture, as well as immunological and histopathological techniques. Additionally, his leadership and management skills have been crucial in successfully managing NIH and foundation-funded research projects, mentoring junior researchers, and developing compelling grant applications. He has already effectively contributed to the various research projects currently underway at the Wake Forest Institute for Regenerative Medicine and Coalesce Biosciences. Outside of work, his hobbies include cooking, watching comedy movies, and playing badminton, ping-pong and cricket with family and friends.",
+                bio: "Sarfaraz Ahmad, PhD holds a PhD in Biochemistry from the Indian Institute of Toxicology Research, Lucknow, and completed his post-doctoral training at the US Environmental Protection Agency (EPA) and Atrium Health - Wake Forest University School of Medicine. He has extensive research experience in both experimental animal models and human subjects, with a strong foundation in toxicology, biochemistry, cell biology, molecular biology, physiology, and pharmacology. His expertise spans a broad range of laboratory techniques, including cellular and molecular biology, biochemical analysis, and analytical biochemistry such as HPLC, LC-MS, affinity column chromatography, PCR, multi-well plate-based immunoassays, ELISA, radioimmunoassay (RIA), cell/tissue culture, as well as immunological and histopathological techniques. Additionally, his leadership and management skills have been crucial in successfully managing NIH and foundation-funded research projects, mentoring junior researchers, and developing compelling grant applications. He has already effectively contributed to the various research projects currently underway at the Wake Forest Institute for Regenerative Medicine and Coalesce Biosciences. Outside of work, his hobbies include cooking, watching comedy movies, and playing badminton, ping-pong and cricket with family and friends.",
                 image: "Ahmadheadshot.jpg"
             },
             {
                 name: "Katie Brigham, MS",
-                role: "Program Manager",
-                bio: "Katie Brigham serves as a Program Manager at Coalesce Biosciences as well as for other CCRP-funded projects, providing essential operational leadership and administrative oversight for complex research initiatives. Working closely with scientific leadership, she ensures project milestones are met through rigorous resource management, regulatory compliance coordination, and streamlined communication across multidisciplinary teams. She currently holds a Master's Degree in Translational Biotechnology from the Wake Forest Institute for Regenerative Medicine (WFIRM) as well as undergraduate degrees in Biology and Chemistry from East Carolina University. She has over a decade of experience as a lab technician in clinical and academic institutions with a specialization in molecular oncology and pathology. His scientific skills include cell culture, organoids, molecular assays, immunohistochemistry, and high-resolution imaging. Outside of work, Katie enjoys spending time with her husband and two children, reading, hiking, and traveling.",
+                role: "Administrative Program Manager",
+                bio: "Katie Brigham serves as the Administrative Program Manager at Coalesce Biosciences as well as for other CCRP-funded projects, providing essential operational leadership and administrative oversight for complex research initiatives. Working closely with scientific leadership, she ensures project milestones are met through rigorous resource management, regulatory compliance coordination, and streamlined communication across multidisciplinary teams. She currently holds a Master's Degree in Translational Biotechnology from the Wake Forest Institute for Regenerative Medicine (WFIRM) as well as undergraduate degrees in Biology and Chemistry from East Carolina University. She has over a decade of experience as a lab technician in clinical and academic institutions with a specialization in molecular oncology and pathology. Her scientific skills include cell culture, organoids, molecular assays, immunohistochemistry, and high-resolution imaging. Outside of work, Katie enjoys spending time with her husband and two children, reading, hiking, and traveling.",
                 image: "Katieheadshot.jpg"
             },
             {
                 name: "Camie Sousa",
                 role: "Lead Research Technician",
-                bio: "Camie Sousa serves as the Lead Research Technician at Coalesce Biosciences, where she coordinates day-to-day laboratory operations and provides high-level technical support for critical research work. She plays a vital role in ensuring experimental consistency and maintaining the rigorous standards required for hazardous agent research and countermeasure development. With over a decade of expertise in ex vivo and in vivo animal models, Camie is fundamental in accelerating translational research by helping develop therapeutics and future treatment strategies. When she is not in the lab, you can find her at the Veterinary Emergency Clinic helping sick or injured pets. Outside of work, she enjoys time with her children, youth football, camping, and animals.",
+                bio: "Camie Sousa serves as the Lead Research Technician at the Wake Forest Institute for Regenerative Medicine and Coalesce Biosciences, where she coordinates day-to-day animal husbandry and provides high-level technical support for critical research studies. When she is not in the lab, you can find her at the Veterinary Emergency Clinic helping sick or injured pets. With over a decade of expertise in ex vivo and in vivo animal models, Camie is fundamental in accelerating translational research by helping develop therapeutics and future treatment strategies.",
                 image: "Camieheadshot.jpg"
             },
             {
@@ -733,10 +728,19 @@
         }
 
         function scrollToContact() {
-            navigateTo('home');
-            setTimeout(() => {
-                document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });
-            }, 100);
+            const contactSection = document.getElementById('contact-section');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                navigateTo('home');
+                setTimeout(() => {
+                    const element = document.getElementById('contact-section');
+                    if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }, 100);
+            }
+            if (isMenuOpen) toggleMenu();
         }
 
         function handleInquiry(e) {
@@ -810,9 +814,15 @@
                     <div class="p-8 md:p-12 bg-white/5 rounded-[3rem] border border-white/10 hover:border-blue-500/30 transition-all">
                         <div class="flex flex-col md:flex-row gap-8 items-start">
                             <div class="shrink-0 w-full md:w-auto flex justify-center md:block">
+                                ${m.image ? `
+                                <div class="w-48 h-64 md:w-56 md:h-72 rounded-3xl overflow-hidden border border-white/10 group shadow-2xl relative bg-white/10">
+                                    <img src="${m.image}" alt="${m.name}" class="w-full h-full object-cover transition-all duration-700 scale-110 group-hover:scale-100" onerror="this.parentElement.innerHTML='<div class=&quot;w-full h-full flex items-center justify-center bg-blue-600/10 text-blue-500&quot;><i data-lucide=&quot;user&quot; class=&quot;w-12 h-12&quot;></i></div>'; lucide.createIcons();">
+                                </div>
+                                ` : `
                                 <div class="w-20 h-20 rounded-3xl flex items-center justify-center bg-blue-600/10 text-blue-500">
                                     <i data-lucide="${m.icon}"></i>
                                 </div>
+                                `}
                             </div>
                             <div class="flex-1">
                                 <h3 class="text-3xl font-bold mb-2 tracking-tight">${m.name}</h3>
@@ -845,16 +855,6 @@
                 `).join('');
             }
             lucide.createIcons();
-        }
-
-        function scrollToContact() {
-            navigateTo('home');
-            setTimeout(() => {
-                const element = document.getElementById('contact-section');
-                if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                }
-            }, 100);
         }
 
         window.onload = renderComponents;
